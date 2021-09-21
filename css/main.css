@@ -1,0 +1,94 @@
+/* CSS HEX
+--dark-slate-blue: #3d348bff;
+--medium-slate-blue: #7678edff;
+--selective-yellow: #f7b801ff;
+--tangerine: #f18701ff;
+--orange-pantone: #f35b04ff;
+*/
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/***** Header Styling ******/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f7b801ff;
+}
+
+header > img {
+  width: 300px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navlink > a {
+  color: #3d348bff;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 20px 20px 0px 20px;
+}
+
+.navlink:hover {
+  border-bottom: solid 3px #f35b04ff;
+}
+
+.main-text {
+  flex-grow: 1;
+}
+
+/***** Footer Styling ******/
+footer {
+  background-color: #3d348bff;
+  color: #f7b801ff;
+  height: 80px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icon > img {
+  width: 40px;
+}
+
+.social-icon {
+  display: inline-block;
+}
+
+.social-icon:hover {
+  transform: scale(120%);
+}
+
+.copywrite {
+  flex-grow: 1;
+  text-align: center;
+  font-family: "Fredoka One", sans-serif;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-grow: 1;
+
+  list-style-type: none;
+}
