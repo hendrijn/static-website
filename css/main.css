@@ -92,3 +92,33 @@ footer {
 
   list-style-type: none;
 }
+
+/***** Home Page Styling *****/
+.main-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.content {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content > h1 {
+  text-align: center;
+  color: #3d348bff;
+}
+
+.content > p {
+  width: 500px;
+  color: #7678edff;
+}
+
+.main-text > img {
+  width: 500px;
+  object-fit: cover;
+}
