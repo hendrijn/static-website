@@ -106,19 +106,42 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .content > h1 {
   text-align: center;
   color: #3d348bff;
+  font-size: 70px;
 }
 
 .content > p {
-  width: 500px;
   color: #7678edff;
+  width: 60%;
+  font-size: 25px;
 }
 
 .main-text > img {
-  width: 500px;
-  object-fit: cover;
+  width: 50%;
+  object-fit: contain;
+}
+
+.join-btn {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  background-color: #7678edff;
+
+  margin: 25px 0;
+  padding: 15px;
+  width: fit-content;
+  text-align: center;
+
+  border-radius: 8px;
+}
+
+.join-btn:hover {
+  transform: scale(115%);
+  box-shadow: 10px 10px 10px gray;
 }
