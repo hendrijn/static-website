@@ -1,0 +1,50 @@
+#heading {
+  text-align: center;
+  font-family: "Fredoka One", sans-serif;
+  color: #3d348bff;
+}
+
+.exec-tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  position: relative;
+  margin: 30px;
+}
+
+.tile > img {
+  height: 500px;
+  border-radius: 10px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  font-size: 0;
+}
+
+.label:hover {
+  margin: 0;
+  border-radius: 10px;
+  border: solid 5px #7678edff;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #f7b801ff;
+  font-size: 3em;
+  font-weight: 600;
+  backdrop-filter: blur(7px);
+}
