@@ -82,6 +82,7 @@ footer {
   flex-grow: 1;
   text-align: center;
   font-family: "Fredoka One", sans-serif;
+  font-size: 1.5em;
 }
 
 .icons {
@@ -132,7 +133,7 @@ footer {
   font-size: 25px;
   color: white;
   text-decoration: none;
-  background-color: #7678edff;
+  background-color: #f18701ff;
 
   margin: 25px 0;
   padding: 15px;

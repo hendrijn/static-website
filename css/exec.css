@@ -18,6 +18,8 @@
 
 .tile > img {
   height: 500px;
+  width: 400px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -31,6 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   padding: 10px;
 
   font-size: 0;
@@ -40,11 +43,10 @@
   margin: 0;
   border-radius: 10px;
   border: solid 5px #7678edff;
-  box-sizing: border-box;
   text-align: center;
   font-family: "Lato", sans-serif;
   color: #f7b801ff;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 600;
   backdrop-filter: blur(7px);
 }

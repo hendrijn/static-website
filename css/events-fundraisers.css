@@ -1,0 +1,53 @@
+#heading {
+  text-align: center;
+  font-family: "Fredoka One", sans-serif;
+  color: #3d348bff;
+}
+
+.event-tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: fit-content;
+  height: fit-content;
+
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  background-color: #7678edff;
+  font-family: "Lato", sans-serif;
+  color: #f18701ff;
+}
+
+.tile > h3 {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+.tile > p {
+  margin: 0;
+}
+.tile > img {
+  margin-top: 10px;
+}
+.square {
+  width: 300px;
+}
+.horizontal {
+  width: 400px;
+}
+
+#date {
+  color: #f7b801ff;
+  margin: 10px 0;
+}
