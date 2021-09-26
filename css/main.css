@@ -6,6 +6,8 @@
 --orange-pantone: #f35b04ff;
 */
 
+/*https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
+
 body {
   margin: 0;
   display: flex;
@@ -16,6 +18,7 @@ body {
 /***** Header Styling ******/
 header {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -90,18 +93,17 @@ nav {
 @media only screen and (max-width: 850px) {
   .navlinks {
     position: fixed;
-    left: -100%;
-    top: 5rem;
+    left: 100%;
+    top: 7%;
     flex-direction: column;
-    background-color: green;
-    width: 100%;
-    border-radius: 10px;
+    background-color: #f7b801ff;
+    width: 35%;
+    border-radius: 0 10px;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px gray;
   }
   .navlinks.active {
-    left: 0;
+    left: 67%;
   }
   .navlink {
     margin: 2.5rem 0;
