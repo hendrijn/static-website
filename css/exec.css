@@ -50,3 +50,10 @@
   font-weight: 600;
   backdrop-filter: blur(7px);
 }
+
+@media only screen and (max-width: 550px) {
+  .tile > img {
+    height: 400px;
+    width: 300px;
+  }
+}

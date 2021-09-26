@@ -18,6 +18,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: #f7b801ff;
 }
 
@@ -37,11 +38,13 @@ nav {
   padding: 0;
   margin: 0;
 }
-
+.navlink {
+  width: fit-content;
+}
 .navlink > a {
   color: #3d348bff;
   font-family: "Fredoka One", sans-serif;
-  font-size: 1.5em;
+  font-size: 30px;
   text-decoration: none;
   padding: 20px 20px 0px 20px;
 }
@@ -52,6 +55,70 @@ nav {
 
 .main-text {
   flex-grow: 1;
+}
+
+.burger {
+  display: none;
+  margin-right: 30px;
+}
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 9px auto;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #3d348bff;
+}
+
+@media only screen and (max-width: 1190px) {
+  .navlink > a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .navlink > a {
+    font-size: 15px;
+  }
+  header > img {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .navlinks {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: green;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px gray;
+  }
+  .navlinks.active {
+    left: 0;
+  }
+  .navlink {
+    margin: 2.5rem 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .burger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active .bar:nth-child(1) {
+    transform: rotateY(8px) rotate(45deg);
+  }
+  .burger.active .bar:nth-child(3) {
+    transform: rotateY(-8px) rotate(-45deg);
+  }
 }
 
 /***** Footer Styling ******/
@@ -68,6 +135,7 @@ footer {
 
 .social-icon > img {
   width: 40px;
+  margin: 10px;
 }
 
 .social-icon {
@@ -82,7 +150,7 @@ footer {
   flex-grow: 1;
   text-align: center;
   font-family: "Fredoka One", sans-serif;
-  font-size: 1.5em;
+  font-size: 30px;
 }
 
 .icons {
@@ -92,6 +160,15 @@ footer {
   flex-grow: 1;
 
   list-style-type: none;
+}
+
+@media only screen and (max-width: 550px) {
+  .copywrite {
+    font-size: 15px;
+  }
+  .social-icon > img {
+    width: 30px;
+  }
 }
 
 /***** Home Page Styling *****/
