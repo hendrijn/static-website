@@ -1,0 +1,10 @@
+.main-content {
+  font-family: "Lato", sans-serif;
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+ol > li {
+  margin: 10px 0;
+}
