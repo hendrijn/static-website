@@ -67,9 +67,9 @@ nav {
 
 .bar {
   display: block;
-  width: 35px;
+  width: 25px;
   height: 3px;
-  margin: 9px auto;
+  margin: 5px auto;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-in-out;
   background-color: #3d348bff;
@@ -92,9 +92,10 @@ nav {
 
 @media only screen and (max-width: 850px) {
   .navlinks {
-    position: fixed;
+    position: absolute;
+    z-index: 9999;
     left: 100%;
-    top: 7%;
+    top: 100%;
     flex-direction: column;
     background-color: #f7b801ff;
     width: 35%;
@@ -116,10 +117,10 @@ nav {
     opacity: 0;
   }
   .burger.active .bar:nth-child(1) {
-    transform: rotateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
   .burger.active .bar:nth-child(3) {
-    transform: rotateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 
@@ -179,6 +180,7 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 20px;
+  flex-grow: 1;
 }
 
 .content {

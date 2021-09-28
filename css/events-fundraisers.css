@@ -4,6 +4,10 @@
   color: #3d348bff;
 }
 
+.main-content {
+  flex-grow: 1;
+}
+
 .event-tiles {
   display: flex;
   flex-direction: row;
