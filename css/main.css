@@ -92,19 +92,17 @@ nav {
 
 @media only screen and (max-width: 850px) {
   .navlinks {
-    position: absolute;
-    z-index: 9999;
-    left: 100%;
-    top: 100%;
-    flex-direction: column;
-    background-color: #f7b801ff;
-    width: 35%;
-    border-radius: 0 10px;
-    text-align: center;
-    transition: 0.3s;
+    display: none;
   }
   .navlinks.active {
-    left: 67%;
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    top: 90%;
+    right: 0%;
+    background-color: #f7b801ff;
+    width: 150px;
+    border-radius: 0 10px;
   }
   .navlink {
     margin: 2.5rem 0;
@@ -120,7 +118,7 @@ nav {
     transform: translateY(8px) rotate(45deg);
   }
   .burger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
   }
 }
 
