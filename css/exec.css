@@ -55,8 +55,25 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
   .tile > img {
     height: 400px;
     width: 300px;
+  }
+
+  .label {
+    position: initial;
+    font-family: "Lato", sans-serif;
+    color: #f7b801ff;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
 }
